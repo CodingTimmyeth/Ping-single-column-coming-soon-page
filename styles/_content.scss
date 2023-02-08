@@ -1,0 +1,147 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .logo-con{
+        margin-top: 0px;
+        margin-bottom: 21px;
+    }
+    h1{
+        margin-bottom: 24px;
+        color: $gray;
+        font-weight: 300;
+        font-size: 42px;
+        span{
+            color: black;
+            font-weight: 700;
+        }
+    }
+    .heading-subtitle{
+        margin-bottom: 49px;
+    }
+    .enter-email{
+        margin-bottom: 60px;
+        width: 530px;
+        input{
+            width: 370px;
+            border: 1px solid $paleBlue;
+            outline: none;
+            color: black;
+            border-radius: 100px;
+            padding: 13px 21px;
+            font-size: 12px;
+            margin-right: 10px;
+            
+        }
+        ::placeholder{
+            color: $paleBlue;
+        }
+        button{
+            background-color: $blue;
+            color: white;
+            padding: 13px 50px;
+            border-radius: 150px;
+            border: none;
+            font-size: 11px;
+            box-shadow: 0 5px 10px $paleBlue;
+            cursor: pointer;
+            opacity: 1;
+            transition: 0.21s ease-in-out;
+        }
+        button:hover{
+            opacity: .75;
+        }
+        .valid{
+            color: green;
+        }
+        .invalid{
+            color: $lightRed;
+        }
+        .show{
+            display: block;
+            margin-left: 1.7rem;
+            padding-top: 7px;
+            font-size: 11px;
+            font-style: italic;
+        }
+    }
+    .hero-image{
+        margin-bottom: 72px;
+        img{
+            width: 642px;
+            height: 387px;
+        }
+    }
+    .links{
+        margin-bottom: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ion-icon{
+            border: 1px solid $paleBlue;
+            padding: 7px;
+            border-radius: 50%;
+            margin-right: 15px;
+            transition: .25s ease-in-out;
+            color: $blue;
+        }
+        ion-icon:hover{
+            background-color: $blue;
+            color: white;
+        }
+    }
+    .end{
+        margin-bottom: 5px;
+        color: $gray;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .logo-con{
+            margin-top: 180px;
+            padding: 0;
+        }
+        h1{
+            font-size: 21px;
+        }
+        .heading-subtitle{
+            font-size: 10px;
+            margin-bottom: 2rem;
+        }
+        .enter-email{
+            width: 300px;
+            height: 120px;
+            display: flex;
+            align-items: stretch;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            input{
+                width: 100%;
+            }
+            .show{
+                position: absolute;
+                bottom: 60px;
+                left: 5%;
+            }
+        }
+        .hero-image{
+            width: 338px;
+            height: 183px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .end{
+            font-size: 12px;
+        }
+        footer{
+            margin-bottom: 10px;
+        }
+    }
+}
